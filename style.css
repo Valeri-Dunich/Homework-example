@@ -1,0 +1,96 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 600px;
+    max-height: 600px;
+    margin:20px auto;
+    padding:30px;
+    background-color: rgb(248, 234, 169);
+    position: relative;
+    
+}
+.container table{
+    width:100%;
+    border:2px solid #584e4ee7;
+    border-collapse:collapse;
+    
+}
+.container table tbody tr:nth-child(even) td:nth-child(odd){
+    background-color: rgb(214, 122, 16);
+  }
+  .container table tbody tr:nth-child(odd) td:nth-child(even){
+    background-color: rgb(214, 122, 16);
+  }
+.container table tbody tr td{
+    width: 67px;
+    height: 67px;
+}
+.id-up{
+    display: flex;
+    position:absolute;
+    transform:rotateX(180deg);
+    top:5px;
+    left:0;
+    width:100%;
+    font-size: 1.3rem;
+    padding: 0 32px;  
+}
+.id-bottom{
+    display: flex;
+    position:absolute;
+    bottom:5px;
+    left:0;
+    width:100%;
+    font-size: 1.3rem;
+    padding: 0 32px;
+}
+.id-left{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    font-size: 1.3rem;
+    padding: 32px 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+.id-right{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    font-size: 1.3rem;
+    padding: 32px 0;
+    top: 0;
+    
+}
+
+.id-up span,.id-bottom span{
+    width:67.2px;
+    text-align: center; 
+}
+.id-left span,.id-right span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 67.2px;
+}
+tr.icon-chess-black{
+    text-align: center;
+    font-size: 2rem; 
+}
+tr.icon-chess-white{
+    text-align: center;
+    font-size: 2rem; 
+    color: white; 
+    /* text-shadow: hsla(0, 0%, 0%, 0.158) 0 5px 5px; */
+}
+
